@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CursorDrive Design System v2.0</title>
+<title>CursorDrive Design System v3.0 — 40 Premium Themes</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -169,248 +169,451 @@ body{font-family:var(--font-display,var(--font-sans));background:var(--bg);color
 }
 
 /* ═══════════════════════════════════════════════
-   ◆ STANDARD THEMES — 20
-   Every theme has a visually distinct bg family,
-   unique accent hue, and clear identity.
+   ◈ MORPHIC — 10 DESIGN-PARADIGM THEMES
+   Neumorphism · Glassmorphism · Skeuomorphism
+   Brutalism · Claymorphism · Holographic · Y2K
+   Vaporwave · Material Dark · Glassmorphism Light
 ═══════════════════════════════════════════════ */
 
-/* S-1 · TWILIGHT INDIGO — slate-dark bg, pure indigo accent */
-[data-theme="twilight-indigo"]{
-  --bg:#0F172A;--surface:#1A2540;--card:#1E2B48;--card2:#243254;
-  --border:rgba(99,102,241,.12);--border2:rgba(99,102,241,.24);
-  --text:#E2E8F0;--text2:#B8C8E0;--muted:#8898B8;--subtle:#445070;
-  --accent:#6366F1;--accent2:#818CF8;--accent-bg:rgba(99,102,241,.12);
-  --accent-glow:rgba(99,102,241,.22);
-  --grad:linear-gradient(135deg,#3730A3 0%,#6366F1 55%,#818CF8 100%);
-  --viz1:#6366F1;--viz2:#818CF8;--viz3:#22D3EE;--viz4:#34D399;--viz5:#FB923C;--viz6:#F472B6;--viz7:#FBBF24;--viz8:#4ADE80;
+/* M-1 · NEUMORPHISM
+   Soft extruded surfaces · muted sky-grey canvas
+   Identity: Soft UI — Apple ecosystem, calm fintech */
+[data-theme="neuro"]{
+  --bg:#E0E5EC;--surface:#D4DAE5;--card:#E8EDF6;--card2:#CDD2DC;
+  --border:rgba(255,255,255,.80);--border2:rgba(160,174,192,.45);
+  --text:#2D3748;--text2:#4A5568;--muted:#718096;--subtle:#A0AEC0;
+  --accent:#4A86E8;--accent2:#2563EB;--accent-bg:rgba(74,134,232,.11);
+  --accent-glow:rgba(74,134,232,.28);
+  --grad:linear-gradient(135deg,#2B52CC 0%,#4A86E8 35%,#6FA9FF 65%,#764BA2 100%);
+  --viz1:#4A86E8;--viz2:#E84A7A;--viz3:#E8A84A;--viz4:#4AE8A8;
+  --viz5:#A84AE8;--viz6:#4AE8E8;--viz7:#E8724A;--viz8:#7AE84A;
   --font-display:var(--font-sans);
 }
 
-/* S-2 · EMBER — deep warm-amber black, vivid orange */
-[data-theme="ember"]{
-  --bg:#180800;--surface:#261000;--card:#321600;--card2:#3E1E00;
-  --border:rgba(249,115,22,.12);--border2:rgba(249,115,22,.24);
-  --text:#FFF2E0;--text2:#FFD0A0;--muted:#C06020;--subtle:#783010;
-  --accent:#F97316;--accent2:#FDBA74;--accent-bg:rgba(249,115,22,.10);
-  --accent-glow:rgba(249,115,22,.25);
-  --grad:linear-gradient(135deg,#C2410C 0%,#EA580C 45%,#F97316 75%,#FDBA74 100%);
-  --viz1:#F97316;--viz2:#FDBA74;--viz3:#FBBF24;--viz4:#34D399;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
+/* M-2 · GLASSMORPHISM DARK
+   Void space · frosted glass cards · aurora accent
+   Identity: Crypto dashboard, immersive SaaS, AI product */
+[data-theme="glass-dark"]{
+  --bg:#06061A;--surface:rgba(255,255,255,.05);--card:rgba(255,255,255,.08);--card2:rgba(255,255,255,.04);
+  --border:rgba(255,255,255,.12);--border2:rgba(255,255,255,.22);
+  --text:#FFFFFF;--text2:rgba(255,255,255,.75);--muted:rgba(255,255,255,.48);--subtle:rgba(255,255,255,.14);
+  --accent:#A78BFA;--accent2:#7C5CFC;--accent-bg:rgba(167,139,250,.15);
+  --accent-glow:rgba(167,139,250,.42);
+  --grad:linear-gradient(135deg,#667EEA 0%,#764BA2 25%,#A78BFA 55%,#F093FB 80%,#FF6EFF 100%);
+  --viz1:#A78BFA;--viz2:#F093FB;--viz3:#38BDF8;--viz4:#34D399;
+  --viz5:#FBBF24;--viz6:#F87171;--viz7:#60A5FA;--viz8:#A3E635;
+  --font-display:var(--font-sans);
+}
+
+/* M-3 · GLASSMORPHISM LIGHT
+   Vivid lavender canvas · frosted white panels
+   Identity: Consumer app, wellness, modern onboarding */
+[data-theme="glass-light"]{
+  --bg:#EEF2FF;--surface:rgba(255,255,255,.60);--card:rgba(255,255,255,.55);--card2:rgba(255,255,255,.35);
+  --border:rgba(255,255,255,.72);--border2:rgba(120,90,220,.24);
+  --text:#1E1035;--text2:#3D2A70;--muted:#6B52A0;--subtle:rgba(120,90,220,.13);
+  --accent:#7C3AED;--accent2:#6D28D9;--accent-bg:rgba(124,58,237,.10);
+  --accent-glow:rgba(124,58,237,.32);
+  --grad:linear-gradient(135deg,#4F46E5 0%,#7C3AED 30%,#A855F7 60%,#EC4899 85%,#FB7185 100%);
+  --viz1:#7C3AED;--viz2:#EC4899;--viz3:#0EA5E9;--viz4:#10B981;
+  --viz5:#F59E0B;--viz6:#EF4444;--viz7:#3B82F6;--viz8:#84CC16;
+  --font-display:var(--font-sans);
+}
+
+/* M-4 · SKEUOMORPHISM
+   Rich mahogany-black leather · gilded brass hardware
+   Identity: Premium craft tools, watchmaking, luxury DTC */
+[data-theme="skeuo"]{
+  --bg:#1A0E04;--surface:#241408;--card:#2E1A0A;--card2:#3A2210;
+  --border:rgba(180,130,50,.28);--border2:rgba(210,160,60,.50);
+  --text:#F0E0C0;--text2:#D4B890;--muted:#9A7A50;--subtle:rgba(180,130,50,.18);
+  --accent:#C8860A;--accent2:#E0A020;--accent-bg:rgba(200,134,10,.14);
+  --accent-glow:rgba(200,134,10,.38);
+  --grad:linear-gradient(135deg,#4A2800 0%,#8A5000 22%,#B87820 44%,#C8860A 66%,#E0B030 84%,#FFD060 100%);
+  --viz1:#C8860A;--viz2:#E03A20;--viz3:#2CA870;--viz4:#3060D0;
+  --viz5:#A03090;--viz6:#20A0C0;--viz7:#C04020;--viz8:#80C040;
   --font-display:var(--font-serif);
 }
 
-/* S-3 · VENOM — near-black green tint, toxic acid green, mono */
-[data-theme="venom"]{
-  --bg:#000E04;--surface:#001A08;--card:#002610;--card2:#003018;
-  --border:rgba(34,197,94,.13);--border2:rgba(34,197,94,.26);
-  --text:#ECFFF2;--text2:#86EFAC;--muted:#16A34A;--subtle:#166534;
-  --accent:#22C55E;--accent2:#4ADE80;--accent-bg:rgba(34,197,94,.10);
-  --accent-glow:rgba(34,197,94,.24);
-  --grad:linear-gradient(135deg,#14532D 0%,#16A34A 45%,#22C55E 75%,#4ADE80 100%);
-  --viz1:#22C55E;--viz2:#4ADE80;--viz3:#22D3EE;--viz4:#FBBF24;--viz5:#F87171;--viz6:#A78BFA;--viz7:#60A5FA;--viz8:#A3E635;
+/* M-5 · BRUTALISM
+   Raw stark white · pure black borders · crimson shock
+   Identity: Art/design agency, bold editorial, anti-aesthetic */
+[data-theme="brutal"]{
+  --bg:#FFFFFF;--surface:#F4F4F4;--card:#FFFFFF;--card2:#EEEEEE;
+  --border:#000000;--border2:#000000;
+  --text:#000000;--text2:#111111;--muted:#444444;--subtle:#CCCCCC;
+  --accent:#FF0040;--accent2:#CC0030;--accent-bg:rgba(255,0,64,.08);
+  --accent-glow:rgba(255,0,64,.25);
+  --grad:linear-gradient(135deg,#FF0040 0%,#CC0030 35%,#880020 65%,#CC0030 80%,#FF4060 100%);
+  --viz1:#FF0040;--viz2:#0000FF;--viz3:#00CC00;--viz4:#FF8800;
+  --viz5:#8800FF;--viz6:#00CCCC;--viz7:#FF0080;--viz8:#CCCC00;
   --font-display:var(--font-mono);
 }
 
-/* S-4 · BLOOD MOON — blackened crimson bg, electric red */
+/* M-6 · CLAYMORPHISM
+   Soft lilac canvas · inflated 3D clay surfaces
+   Identity: Consumer SaaS, gamified onboarding, edtech */
+[data-theme="clay-morph"]{
+  --bg:#F3EEFF;--surface:#EDE4FF;--card:#FFFFFF;--card2:#EAE0FF;
+  --border:rgba(150,110,255,.18);--border2:rgba(130,80,255,.30);
+  --text:#1A0050;--text2:#380080;--muted:#7050A0;--subtle:rgba(130,80,255,.12);
+  --accent:#8040FF;--accent2:#6020E0;--accent-bg:rgba(128,64,255,.11);
+  --accent-glow:rgba(128,64,255,.42);
+  --grad:linear-gradient(135deg,#4400CC 0%,#6820F0 28%,#8040FF 55%,#B060FF 78%,#E090FF 100%);
+  --viz1:#8040FF;--viz2:#FF4080;--viz3:#40CCFF;--viz4:#40FF90;
+  --viz5:#FFA040;--viz6:#FF4040;--viz7:#40A0FF;--viz8:#A0FF40;
+  --font-display:var(--font-sans);
+}
+
+/* M-7 · HOLOGRAPHIC
+   Void black · iridescent rainbow aurora spectrum
+   Identity: NFT platform, luxury metaverse, immersive UI */
+[data-theme="holo"]{
+  --bg:#05020F;--surface:#0C0520;--card:#100830;--card2:#180C40;
+  --border:rgba(200,100,255,.18);--border2:rgba(100,200,255,.28);
+  --text:#FFFFFF;--text2:rgba(255,255,255,.80);--muted:rgba(180,150,255,.68);--subtle:rgba(140,90,255,.18);
+  --accent:#FF6EFF;--accent2:#CC44CC;--accent-bg:rgba(255,110,255,.14);
+  --accent-glow:rgba(255,110,255,.48);
+  --grad:linear-gradient(135deg,#FF6EFF 0%,#FF4488 18%,#FF8C00 36%,#FFD700 54%,#00FFD0 72%,#00BFFF 88%,#8040FF 100%);
+  --viz1:#FF6EFF;--viz2:#00FFD0;--viz3:#FFD700;--viz4:#FF4488;
+  --viz5:#00BFFF;--viz6:#FF8C00;--viz7:#8040FF;--viz8:#40FF90;
+  --font-display:var(--font-sans);
+}
+
+/* M-8 · Y2K CHROME
+   Pure digital black · brushed chrome silver sheen
+   Identity: Retro-futurism, cyber aesthetics, tech nostalgia */
+[data-theme="y2k-chrome"]{
+  --bg:#080808;--surface:#101010;--card:#181818;--card2:#0C0C0C;
+  --border:rgba(180,180,210,.18);--border2:rgba(220,220,248,.32);
+  --text:#E0E0F0;--text2:#B0B0C8;--muted:#707090;--subtle:rgba(200,200,228,.08);
+  --accent:#C0C8E8;--accent2:#9098C0;--accent-bg:rgba(192,200,232,.09);
+  --accent-glow:rgba(192,200,232,.38);
+  --grad:linear-gradient(135deg,#282848 0%,#4858A0 22%,#7080C0 44%,#A8B4D8 66%,#D8E0F4 84%,#FFFFFF 100%);
+  --viz1:#C0C8E8;--viz2:#8090C8;--viz3:#60A0E0;--viz4:#A0C8FF;
+  --viz5:#E8C0E8;--viz6:#C8E0FF;--viz7:#E8E0C0;--viz8:#A0E8D8;
+  --font-display:var(--font-mono);
+}
+
+/* M-9 · VAPORWAVE
+   Violet midnight · bubblegum pink × electric cyan
+   Identity: Retro-digital, aesthetic communities, music platforms */
+[data-theme="vaporwave"]{
+  --bg:#0D001A;--surface:#1A0030;--card:#20003C;--card2:#150025;
+  --border:rgba(255,100,220,.18);--border2:rgba(100,220,255,.28);
+  --text:#FFE8FF;--text2:#DDA8FF;--muted:#A060C0;--subtle:rgba(200,80,200,.18);
+  --accent:#FF71CE;--accent2:#CC44AA;--accent-bg:rgba(255,113,206,.14);
+  --accent-glow:rgba(255,113,206,.42);
+  --grad:linear-gradient(135deg,#FF71CE 0%,#FF4080 20%,#FF0080 40%,#8800FF 60%,#0088FF 80%,#00FFEE 100%);
+  --viz1:#FF71CE;--viz2:#00FFEE;--viz3:#FFD700;--viz4:#FF0080;
+  --viz5:#0088FF;--viz6:#8800FF;--viz7:#FF8800;--viz8:#00FF88;
+  --font-display:var(--font-sans);
+}
+
+/* M-10 · MATERIAL DARK
+   Elevation-based dark · Material Design 3 purple anchor
+   Identity: Google ecosystem, Android apps, modern enterprise */
+[data-theme="material-dark"]{
+  --bg:#121212;--surface:#1E1E1E;--card:#252525;--card2:#2C2C2C;
+  --border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.14);
+  --text:rgba(255,255,255,.87);--text2:rgba(255,255,255,.60);--muted:rgba(255,255,255,.38);--subtle:rgba(255,255,255,.07);
+  --accent:#BB86FC;--accent2:#9B66DC;--accent-bg:rgba(187,134,252,.11);
+  --accent-glow:rgba(187,134,252,.32);
+  --grad:linear-gradient(135deg,#5200B3 0%,#7C10E8 28%,#BB86FC 60%,#CF9FFF 80%,#E0C8FF 100%);
+  --viz1:#BB86FC;--viz2:#03DAC6;--viz3:#CF6679;--viz4:#FFB74D;
+  --viz5:#4DB6AC;--viz6:#FF8A65;--viz7:#81C784;--viz8:#64B5F6;
+  --font-display:var(--font-sans);
+}
+
+/* ═══════════════════════════════════════════════
+   ◆ REFINED DARK — 9 THEMES
+   Each with a unique bg tint, prestige gradient,
+   and a real-world identity. No plain dark greys.
+═══════════════════════════════════════════════ */
+
+/* R-1 · OBSIDIAN INDIGO
+   Blue-black void · electric violet-to-periwinkle
+   Identity: Elite enterprise SaaS — IBM, Salesforce premium tier */
+[data-theme="twilight-indigo"]{
+  --bg:#07091A;--surface:#0C1030;--card:#111640;--card2:#171E52;
+  --border:rgba(124,139,255,.12);--border2:rgba(124,139,255,.24);
+  --text:#E8ECFF;--text2:#B0BCEE;--muted:#7080CC;--subtle:#38468A;
+  --accent:#7C8BFF;--accent2:#C7CEFF;--accent-bg:rgba(124,139,255,.11);
+  --accent-glow:rgba(124,139,255,.28);
+  --grad:linear-gradient(135deg,#1E1B6A 0%,#3730B0 25%,#5A50E8 55%,#7C8BFF 80%,#C7CEFF 100%);
+  --viz1:#7C8BFF;--viz2:#C7CEFF;--viz3:#22D3EE;--viz4:#34D399;--viz5:#FB923C;--viz6:#F472B6;--viz7:#FBBF24;--viz8:#4ADE80;
+  --font-display:var(--font-sans);
+}
+
+/* R-2 · HEARTH
+   Deep mahogany-black · coal-to-ember four-stop flame
+   Identity: Michelin-star restaurant, luxury whisky, cigar lounge */
+[data-theme="ember"]{
+  --bg:#0E0500;--surface:#1C0A00;--card:#2A1000;--card2:#381800;
+  --border:rgba(232,98,42,.12);--border2:rgba(232,98,42,.24);
+  --text:#FFF4EA;--text2:#FFD4A8;--muted:#B85020;--subtle:#7A2E0A;
+  --accent:#E8622A;--accent2:#F5924A;--accent-bg:rgba(232,98,42,.10);
+  --accent-glow:rgba(232,98,42,.28);
+  --grad:linear-gradient(135deg,#4A1000 0%,#8C2800 25%,#C84010 55%,#E8622A 80%,#F5924A 100%);
+  --viz1:#E8622A;--viz2:#F5924A;--viz3:#FBBF24;--viz4:#34D399;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
+  --font-display:var(--font-serif);
+}
+
+/* R-3 · MATRIX GRID
+   Near-pure black, green breath · void-to-neon terminal sweep
+   Identity: Premium cybersecurity, elite developer tools */
+[data-theme="venom"]{
+  --bg:#000A02;--surface:#001206;--card:#001E0C;--card2:#002A12;
+  --border:rgba(0,255,136,.12);--border2:rgba(0,255,136,.24);
+  --text:#EAFFF2;--text2:#60EEA0;--muted:#00CC66;--subtle:#006633;
+  --accent:#00FF88;--accent2:#60FFB8;--accent-bg:rgba(0,255,136,.08);
+  --accent-glow:rgba(0,255,136,.28);
+  --grad:linear-gradient(135deg,#002210 0%,#005528 25%,#00AA55 55%,#00FF88 80%,#80FFD0 100%);
+  --viz1:#00FF88;--viz2:#60FFB8;--viz3:#22D3EE;--viz4:#FBBF24;--viz5:#F87171;--viz6:#A78BFA;--viz7:#60A5FA;--viz8:#A3E635;
+  --font-display:var(--font-mono);
+}
+
+/* R-4 · NOIR ROUGE
+   Blackened crimson void · deep wine-to-vivid cinema sweep
+   Identity: Luxury cinema, Burgundy wine brand, premium drama */
 [data-theme="blood-moon"]{
-  --bg:#0F0000;--surface:#1C0000;--card:#280000;--card2:#340000;
-  --border:rgba(239,68,68,.12);--border2:rgba(239,68,68,.24);
-  --text:#FFEEEE;--text2:#FFC0C0;--muted:#C04040;--subtle:#7A2020;
-  --accent:#EF4444;--accent2:#FCA5A5;--accent-bg:rgba(239,68,68,.10);
-  --accent-glow:rgba(239,68,68,.25);
-  --grad:linear-gradient(135deg,#7F1D1D 0%,#B91C1C 40%,#EF4444 75%,#FCA5A5 100%);
-  --viz1:#EF4444;--viz2:#FCA5A5;--viz3:#F97316;--viz4:#FBBF24;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#34D399;
-  --font-display:var(--font-sans);
+  --bg:#0C0000;--surface:#1A0000;--card:#280000;--card2:#360400;
+  --border:rgba(204,17,17,.12);--border2:rgba(204,17,17,.24);
+  --text:#FFEAEA;--text2:#FFB0B0;--muted:#CC2020;--subtle:#7A0808;
+  --accent:#CC1111;--accent2:#FF4444;--accent-bg:rgba(204,17,17,.10);
+  --accent-glow:rgba(204,17,17,.28);
+  --grad:linear-gradient(135deg,#3D0000 0%,#7A0000 25%,#AA0808 50%,#CC1111 75%,#FF4444 100%);
+  --viz1:#CC1111;--viz2:#FF4444;--viz3:#F97316;--viz4:#FBBF24;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#34D399;
+  --font-display:var(--font-serif);
 }
 
-/* S-5 · VERDIGRIS — dark teal-forest bg, jewel teal accent */
+/* R-5 · JADE PALACE
+   Deep forest-black tint · precious jade mineral sweep
+   Identity: Asian luxury brand, premium spa, heritage teal */
 [data-theme="verdigris"]{
-  --bg:#041A14;--surface:#072410;--card:#0B2E18;--card2:#0F3A22;
-  --border:rgba(45,212,191,.12);--border2:rgba(45,212,191,.24);
-  --text:#E8FFF8;--text2:#96F0DC;--muted:#2EA898;--subtle:#0D6048;
-  --accent:#2DD4BF;--accent2:#5EEAD4;--accent-bg:rgba(45,212,191,.10);
-  --accent-glow:rgba(45,212,191,.24);
-  --grad:linear-gradient(135deg,#134E4A 0%,#0F766E 40%,#2DD4BF 75%,#5EEAD4 100%);
-  --viz1:#2DD4BF;--viz2:#5EEAD4;--viz3:#22D3EE;--viz4:#FBBF24;--viz5:#F87171;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
+  --bg:#021410;--surface:#062018;--card:#0A2E22;--card2:#0E3C2C;
+  --border:rgba(0,200,160,.12);--border2:rgba(0,200,160,.24);
+  --text:#EAFFF8;--text2:#80F0D0;--muted:#00C8A0;--subtle:#0A6048;
+  --accent:#00C8A0;--accent2:#50E8C8;--accent-bg:rgba(0,200,160,.10);
+  --accent-glow:rgba(0,200,160,.28);
+  --grad:linear-gradient(135deg,#003A28 0%,#007060 25%,#00A888 55%,#00C8A0 80%,#50E8C8 100%);
+  --viz1:#00C8A0;--viz2:#50E8C8;--viz3:#22D3EE;--viz4:#FBBF24;--viz5:#F87171;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
   --font-display:var(--font-sans);
 }
 
-/* S-6 · NEON AZURE — midnight navy bg, pure electric sky neon */
+/* R-6 · COBALT DEPTHS
+   Midnight navy tint · deep ocean-to-electric cobalt
+   Identity: Premium fintech, Bloomberg-tier financial SaaS */
 [data-theme="neon-azure"]{
-  --bg:#000A1C;--surface:#001430;--card:#001E44;--card2:#002858;
-  --border:rgba(0,212,255,.12);--border2:rgba(0,212,255,.24);
-  --text:#E0F8FF;--text2:#80D8FF;--muted:#0088CC;--subtle:#004880;
-  --accent:#00D4FF;--accent2:#67E8F9;--accent-bg:rgba(0,212,255,.10);
-  --accent-glow:rgba(0,212,255,.28);
-  --grad:linear-gradient(135deg,#005080 0%,#0090CC 35%,#00D4FF 70%,#67E8F9 100%);
-  --viz1:#00D4FF;--viz2:#67E8F9;--viz3:#818CF8;--viz4:#4ADE80;--viz5:#FBBF24;--viz6:#F87171;--viz7:#F472B6;--viz8:#A78BFA;
+  --bg:#000818;--surface:#001030;--card:#001A48;--card2:#002460;
+  --border:rgba(0,184,255,.12);--border2:rgba(0,184,255,.24);
+  --text:#E0F4FF;--text2:#80CCFF;--muted:#0090D8;--subtle:#004880;
+  --accent:#00B8FF;--accent2:#80DCFF;--accent-bg:rgba(0,184,255,.10);
+  --accent-glow:rgba(0,184,255,.30);
+  --grad:linear-gradient(135deg,#001840 0%,#003880 25%,#0070CC 50%,#00B8FF 80%,#80DCFF 100%);
+  --viz1:#00B8FF;--viz2:#80DCFF;--viz3:#818CF8;--viz4:#4ADE80;--viz5:#FBBF24;--viz6:#F87171;--viz7:#F472B6;--viz8:#A78BFA;
   --font-display:var(--font-sans);
 }
 
-/* S-7 · PLUM DARK — deepest purple-black bg, soft lavender */
+/* R-7 · AMETHYST
+   Deep violet-black · raw amethyst crystal gradient
+   Identity: Luxury cosmetics dark, precious gem brand, jewelry */
 [data-theme="plum-dark"]{
-  --bg:#0C0218;--surface:#140428;--card:#1C0838;--card2:#240E48;
-  --border:rgba(192,132,252,.12);--border2:rgba(192,132,252,.24);
-  --text:#F0E8FF;--text2:#D0BCFF;--muted:#9060C0;--subtle:#5A3080;
-  --accent:#C084FC;--accent2:#E9D5FF;--accent-bg:rgba(192,132,252,.10);
-  --accent-glow:rgba(192,132,252,.24);
-  --grad:linear-gradient(135deg,#4C1D95 0%,#7C3AED 40%,#C084FC 75%,#E9D5FF 100%);
-  --viz1:#C084FC;--viz2:#E9D5FF;--viz3:#22D3EE;--viz4:#34D399;--viz5:#FBBF24;--viz6:#F87171;--viz7:#60A5FA;--viz8:#4ADE80;
+  --bg:#0A0014;--surface:#140028;--card:#1E0040;--card2:#280054;
+  --border:rgba(155,64,224,.12);--border2:rgba(155,64,224,.24);
+  --text:#F4EAFF;--text2:#D4A8FF;--muted:#A040E0;--subtle:#5C1890;
+  --accent:#9B40E0;--accent2:#CC88FF;--accent-bg:rgba(155,64,224,.10);
+  --accent-glow:rgba(155,64,224,.28);
+  --grad:linear-gradient(135deg,#300060 0%,#6018B0 25%,#8C30D8 55%,#9B40E0 75%,#CC88FF 100%);
+  --viz1:#9B40E0;--viz2:#CC88FF;--viz3:#22D3EE;--viz4:#34D399;--viz5:#FBBF24;--viz6:#F87171;--viz7:#60A5FA;--viz8:#4ADE80;
   --font-display:var(--font-sans);
 }
 
-/* S-8 · NEON MAGENTA — ultra-dark violet bg, electric fuchsia */
+/* R-8 · ELECTRIC ROSE
+   Near-black magenta void · fashion-house deep rose sweep
+   Identity: High fashion dark editorial, luxury fragrance brand */
 [data-theme="neon-magenta"]{
-  --bg:#0A0010;--surface:#12001C;--card:#1A002A;--card2:#220038;
-  --border:rgba(240,171,252,.12);--border2:rgba(240,171,252,.24);
-  --text:#FDE8FF;--text2:#F0ABFC;--muted:#A020D0;--subtle:#680090;
-  --accent:#E879F9;--accent2:#F0ABFC;--accent-bg:rgba(232,121,249,.10);
-  --accent-glow:rgba(232,121,249,.28);
-  --grad:linear-gradient(135deg,#701A75 0%,#C026D3 35%,#E879F9 65%,#F0ABFC 85%,#67E8F9 100%);
-  --viz1:#E879F9;--viz2:#F0ABFC;--viz3:#67E8F9;--viz4:#4ADE80;--viz5:#FBBF24;--viz6:#F87171;--viz7:#60A5FA;--viz8:#A3E635;
+  --bg:#0C0008;--surface:#1A0014;--card:#280020;--card2:#36002C;
+  --border:rgba(255,0,128,.12);--border2:rgba(255,0,128,.24);
+  --text:#FFE8F6;--text2:#FF90CC;--muted:#CC0060;--subtle:#7A0038;
+  --accent:#FF0080;--accent2:#FF80C0;--accent-bg:rgba(255,0,128,.09);
+  --accent-glow:rgba(255,0,128,.30);
+  --grad:linear-gradient(135deg,#3A0020 0%,#880040 25%,#CC0060 50%,#FF0080 75%,#FF80C0 100%);
+  --viz1:#FF0080;--viz2:#FF80C0;--viz3:#67E8F9;--viz4:#4ADE80;--viz5:#FBBF24;--viz6:#F87171;--viz7:#60A5FA;--viz8:#A3E635;
   --font-display:var(--font-sans);
 }
 
-/* S-9 · CANARY — warm amber-black bg, electric yellow accent */
+/* R-9 · NEON VOLT
+   Warm amber-void black · pure gold neon sweep
+   Identity: Premium streetwear, luxury sneaker culture, bold fashion */
 [data-theme="canary"]{
-  --bg:#0A0800;--surface:#160E00;--card:#201600;--card2:#2C1E00;
-  --border:rgba(234,179,8,.12);--border2:rgba(234,179,8,.24);
-  --text:#FFFDE0;--text2:#FFF08A;--muted:#B09000;--subtle:#605000;
-  --accent:#EAB308;--accent2:#FDE047;--accent-bg:rgba(234,179,8,.10);
-  --accent-glow:rgba(234,179,8,.26);
-  --grad:linear-gradient(135deg,#713F12 0%,#B45309 30%,#D97706 55%,#EAB308 80%,#FDE047 100%);
-  --viz1:#EAB308;--viz2:#FDE047;--viz3:#34D399;--viz4:#60A5FA;--viz5:#F87171;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
+  --bg:#080600;--surface:#120E00;--card:#1C1800;--card2:#282200;
+  --border:rgba(255,215,0,.12);--border2:rgba(255,215,0,.24);
+  --text:#FFFDE8;--text2:#FFF08A;--muted:#CCAA00;--subtle:#665500;
+  --accent:#FFD700;--accent2:#FFEE80;--accent-bg:rgba(255,215,0,.09);
+  --accent-glow:rgba(255,215,0,.28);
+  --grad:linear-gradient(135deg,#3A2000 0%,#886600 25%,#CCAA00 50%,#FFD700 80%,#FFEE80 100%);
+  --viz1:#FFD700;--viz2:#FFEE80;--viz3:#34D399;--viz4:#60A5FA;--viz5:#F87171;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#4ADE80;
   --font-display:var(--font-sans);
 }
 
-/* S-10 · ARCTIC — pure white bg, deep cyan-blue accent */
+/* ═══════════════════════════════════════════════
+   ◆ REFINED LIGHT — 11 THEMES
+   No plain white backgrounds. Every light theme
+   has a distinct chromatic tint and premium identity.
+═══════════════════════════════════════════════ */
+
+/* R-10 · FROST GLASS
+   Sapphire-tinted near-white · deep sapphire-to-sky
+   Identity: Premium minimal tech — Apple / Linear aesthetic */
 [data-theme="arctic"]{
-  --bg:#FFFFFF;--surface:#F2F8FF;--card:#FFFFFF;--card2:#E8F2FF;
-  --border:rgba(8,145,178,.10);--border2:rgba(8,145,178,.20);
-  --text:#0A1A28;--text2:#1A3048;--muted:#406888;--subtle:#90B8D0;
-  --accent:#0891B2;--accent2:#22D3EE;--accent-bg:rgba(8,145,178,.08);
-  --accent-glow:rgba(8,145,178,.18);
-  --grad:linear-gradient(135deg,#075985 0%,#0891B2 50%,#22D3EE 100%);
-  --viz1:#0891B2;--viz2:#22D3EE;--viz3:#7C3AED;--viz4:#059669;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#F4F8FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#E4EDFF;
+  --border:rgba(0,112,204,.11);--border2:rgba(0,112,204,.22);
+  --text:#060E20;--text2:#101E3C;--muted:#305090;--subtle:#88AACC;
+  --accent:#0070CC;--accent2:#40A0EE;--accent-bg:rgba(0,112,204,.08);
+  --accent-glow:rgba(0,112,204,.18);
+  --grad:linear-gradient(135deg,#003870 0%,#0055AA 30%,#0070CC 60%,#40A0EE 85%,#90C8FF 100%);
+  --viz1:#0070CC;--viz2:#40A0EE;--viz3:#7C3AED;--viz4:#059669;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-sans);
 }
 
-/* S-11 · JADE — fresh pale-green bg, emerald accent */
+/* R-11 · CELADON SPA
+   Pale celadon tint · deep forest-teal prestige sweep · serif
+   Identity: Luxury wellness spa, premium yoga studio, organic brand */
 [data-theme="jade"]{
-  --bg:#F0FDF4;--surface:#FFFFFF;--card:#FFFFFF;--card2:#DCFCE7;
-  --border:rgba(5,150,105,.11);--border2:rgba(5,150,105,.22);
-  --text:#052E16;--text2:#14532D;--muted:#15803D;--subtle:#86EFAC;
-  --accent:#059669;--accent2:#34D399;--accent-bg:rgba(5,150,105,.08);
-  --accent-glow:rgba(5,150,105,.16);
-  --grad:linear-gradient(135deg,#064E3B 0%,#059669 50%,#34D399 100%);
-  --viz1:#059669;--viz2:#34D399;--viz3:#0891B2;--viz4:#7C3AED;--viz5:#D97706;--viz6:#DC2626;--viz7:#DB2777;--viz8:#65A30D;
-  --font-display:var(--font-sans);
+  --bg:#EDF8F4;--surface:#FFFFFF;--card:#FFFFFF;--card2:#D0F0E4;
+  --border:rgba(0,134,106,.12);--border2:rgba(0,134,106,.24);
+  --text:#022018;--text2:#0A3828;--muted:#00725A;--subtle:#70C0A8;
+  --accent:#00866A;--accent2:#40C0A0;--accent-bg:rgba(0,134,106,.08);
+  --accent-glow:rgba(0,134,106,.18);
+  --grad:linear-gradient(135deg,#004438 0%,#006A52 30%,#00866A 60%,#40C0A0 85%,#90E8D0 100%);
+  --viz1:#00866A;--viz2:#40C0A0;--viz3:#0891B2;--viz4:#7C3AED;--viz5:#D97706;--viz6:#DC2626;--viz7:#DB2777;--viz8:#65A30D;
+  --font-display:var(--font-serif);
 }
 
-/* S-12 · SAFFRON — warm parchment bg, heritage gold · serif */
+/* R-12 · RAJASTHAN GOLD
+   Rich parchment · dark goldenrod-to-saffron five-stop sweep · serif
+   Identity: Ultra-premium heritage spice, Ayurvedic luxury brand */
 [data-theme="saffron"]{
-  --bg:#F7EFDF;--surface:#FFF8EE;--card:#FFFFFF;--card2:#F5E8D0;
-  --border:rgba(180,120,0,.14);--border2:rgba(180,120,0,.26);
-  --text:#2C1A00;--text2:#5C3800;--muted:#8B6020;--subtle:#C49A40;
-  --accent:#D4AF37;--accent2:#F5D060;--accent-bg:rgba(212,175,55,.11);
-  --accent-glow:rgba(212,175,55,.18);
-  --grad:linear-gradient(135deg,#92400E 0%,#B45309 35%,#D4AF37 65%,#F5D060 100%);
-  --viz1:#D4AF37;--viz2:#B8860B;--viz3:#DC2626;--viz4:#059669;--viz5:#2563EB;--viz6:#7C3AED;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#F8EED8;--surface:#FFFDF0;--card:#FFFFFF;--card2:#F0E0B8;
+  --border:rgba(184,134,11,.15);--border2:rgba(184,134,11,.28);
+  --text:#200E00;--text2:#4A2800;--muted:#926010;--subtle:#D0A040;
+  --accent:#B8860B;--accent2:#E0B840;--accent-bg:rgba(184,134,11,.10);
+  --accent-glow:rgba(184,134,11,.20);
+  --grad:linear-gradient(135deg,#5C3500 0%,#8B5E00 20%,#B8860B 45%,#D4AF37 65%,#E8C84A 85%,#F8E080 100%);
+  --viz1:#B8860B;--viz2:#D4AF37;--viz3:#DC2626;--viz4:#059669;--viz5:#2563EB;--viz6:#7C3AED;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-serif);
 }
 
-/* S-13 · CRIMSON — sharp white bg, confident vermilion red */
+/* R-13 · BORDEAUX
+   Barely-blush ivory · deep Bordeaux wine-to-rose
+   Identity: Luxury real estate, premium wine brand, prestige property */
 [data-theme="crimson"]{
-  --bg:#FFFFFF;--surface:#FFF5F5;--card:#FFFFFF;--card2:#FFE8E8;
-  --border:rgba(220,38,38,.10);--border2:rgba(220,38,38,.20);
-  --text:#180000;--text2:#3A0000;--muted:#7F1D1D;--subtle:#FCA5A5;
-  --accent:#DC2626;--accent2:#EF4444;--accent-bg:rgba(220,38,38,.07);
-  --accent-glow:rgba(220,38,38,.16);
-  --grad:linear-gradient(135deg,#991B1B 0%,#DC2626 55%,#FCA5A5 100%);
-  --viz1:#DC2626;--viz2:#EF4444;--viz3:#0891B2;--viz4:#059669;--viz5:#7C3AED;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#FFF6F6;--surface:#FFFFFF;--card:#FFFFFF;--card2:#FFE4E4;
+  --border:rgba(153,0,0,.11);--border2:rgba(153,0,0,.22);
+  --text:#160000;--text2:#340000;--muted:#880000;--subtle:#FFAAAA;
+  --accent:#990000;--accent2:#CC2222;--accent-bg:rgba(153,0,0,.07);
+  --accent-glow:rgba(153,0,0,.16);
+  --grad:linear-gradient(135deg,#4A0000 0%,#7A0000 30%,#990000 55%,#CC2222 80%,#FF6666 100%);
+  --viz1:#990000;--viz2:#CC2222;--viz3:#0891B2;--viz4:#059669;--viz5:#7C3AED;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-sans);
 }
 
-/* S-14 · SCHOLAR — soft white bg, deep violet × warm gold split */
+/* R-14 · ROYAL INK
+   Soft lavender tint · deep royal violet-to-warm gold · serif
+   Identity: Premium education, Oxford / Harvard prestige, fine publishing */
 [data-theme="scholar"]{
-  --bg:#FAFAFA;--surface:#FFFFFF;--card:#FFFFFF;--card2:#F3EEFF;
-  --border:rgba(124,58,237,.10);--border2:rgba(124,58,237,.20);
-  --text:#180C2E;--text2:#2C1A4E;--muted:#6D28D9;--subtle:#C4B5FD;
-  --accent:#7C3AED;--accent2:#F59E0B;--accent-bg:rgba(124,58,237,.07);
-  --accent-glow:rgba(124,58,237,.16);
-  --grad:linear-gradient(135deg,#5B21B6 0%,#7C3AED 45%,#C084FC 70%,#F59E0B 100%);
-  --viz1:#7C3AED;--viz2:#F59E0B;--viz3:#0891B2;--viz4:#059669;--viz5:#DC2626;--viz6:#DB2777;--viz7:#3B82F6;--viz8:#65A30D;
-  --font-display:var(--font-sans);
+  --bg:#F6F4FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#ECE8FF;
+  --border:rgba(91,33,182,.11);--border2:rgba(91,33,182,.22);
+  --text:#120830;--text2:#261450;--muted:#5B21B6;--subtle:#C4B5FD;
+  --accent:#5B21B6;--accent2:#8B5CF6;--accent-bg:rgba(91,33,182,.08);
+  --accent-glow:rgba(91,33,182,.18);
+  --grad:linear-gradient(135deg,#2E0070 0%,#5B21B6 30%,#7C3AED 55%,#A78BFA 75%,#D4A017 100%);
+  --viz1:#5B21B6;--viz2:#8B5CF6;--viz3:#0891B2;--viz4:#059669;--viz5:#DC2626;--viz6:#DB2777;--viz7:#3B82F6;--viz8:#65A30D;
+  --font-display:var(--font-serif);
 }
 
-/* S-15 · OCEAN — cool near-white bg, corporate royal blue */
+/* R-15 · ATLANTIC
+   Steel-blue tinted page · deep ocean five-stop sweep
+   Identity: Premium maritime fintech, Bloomberg-tier light, banking */
 [data-theme="ocean"]{
-  --bg:#F6F9FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#EBF0FF;
-  --border:rgba(37,99,235,.10);--border2:rgba(37,99,235,.20);
-  --text:#081428;--text2:#162440;--muted:#2E5080;--subtle:#90AACE;
-  --accent:#2563EB;--accent2:#60A5FA;--accent-bg:rgba(37,99,235,.07);
-  --accent-glow:rgba(37,99,235,.16);
-  --grad:linear-gradient(135deg,#1E3A8A 0%,#2563EB 55%,#60A5FA 100%);
-  --viz1:#2563EB;--viz2:#60A5FA;--viz3:#059669;--viz4:#DC2626;--viz5:#7C3AED;--viz6:#D97706;--viz7:#DB2777;--viz8:#0891B2;
+  --bg:#EEF2FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#DDE6FF;
+  --border:rgba(16,64,204,.11);--border2:rgba(16,64,204,.22);
+  --text:#060C28;--text2:#101C44;--muted:#1040CC;--subtle:#88A0DD;
+  --accent:#1040CC;--accent2:#4070EE;--accent-bg:rgba(16,64,204,.07);
+  --accent-glow:rgba(16,64,204,.18);
+  --grad:linear-gradient(135deg,#060F4A 0%,#1030A8 25%,#1040CC 50%,#4070EE 80%,#90B0FF 100%);
+  --viz1:#1040CC;--viz2:#4070EE;--viz3:#059669;--viz4:#DC2626;--viz5:#7C3AED;--viz6:#D97706;--viz7:#DB2777;--viz8:#0891B2;
   --font-display:var(--font-sans);
 }
 
-/* S-16 · SAKURA — blush-pink bg, vivid hot pink · serif */
+/* R-16 · EDO GARDEN
+   Saturated blush parchment · deep lacquer-to-petal · serif
+   Identity: Japanese luxury brand, Kyoto heritage, premium cosmetics */
 [data-theme="sakura"]{
-  --bg:#FFF0F5;--surface:#FFFFFF;--card:#FFFFFF;--card2:#FFD6E8;
-  --border:rgba(236,72,153,.12);--border2:rgba(236,72,153,.24);
-  --text:#1A0010;--text2:#3A0028;--muted:#9D174D;--subtle:#FBCFE8;
-  --accent:#EC4899;--accent2:#F9A8D4;--accent-bg:rgba(236,72,153,.08);
-  --accent-glow:rgba(236,72,153,.16);
-  --grad:linear-gradient(135deg,#9D174D 0%,#DB2777 40%,#EC4899 70%,#F9A8D4 100%);
-  --viz1:#EC4899;--viz2:#F9A8D4;--viz3:#7C3AED;--viz4:#059669;--viz5:#0891B2;--viz6:#D97706;--viz7:#DC2626;--viz8:#65A30D;
+  --bg:#FEF0F6;--surface:#FFFFFF;--card:#FFFFFF;--card2:#FFDAEE;
+  --border:rgba(192,0,108,.12);--border2:rgba(192,0,108,.24);
+  --text:#180010;--text2:#380028;--muted:#C0006C;--subtle:#F0A0C8;
+  --accent:#C0006C;--accent2:#E8608A;--accent-bg:rgba(192,0,108,.08);
+  --accent-glow:rgba(192,0,108,.18);
+  --grad:linear-gradient(135deg,#600030 0%,#A0005A 25%,#C0006C 50%,#E0508A 75%,#FFB8D8 100%);
+  --viz1:#C0006C;--viz2:#E0508A;--viz3:#7C3AED;--viz4:#059669;--viz5:#0891B2;--viz6:#D97706;--viz7:#DC2626;--viz8:#65A30D;
   --font-display:var(--font-serif);
 }
 
-/* S-17 · FOREST — cool pale-green bg, deep hunter green · serif */
+/* R-17 · RAINFOREST
+   Deep sage-green tint · ancient forest canopy sweep · serif
+   Identity: Premium eco luxury, organic certification, conservation brand */
 [data-theme="forest"]{
-  --bg:#F0F9F0;--surface:#FFFFFF;--card:#FFFFFF;--card2:#D1FAD1;
-  --border:rgba(22,101,52,.12);--border2:rgba(22,101,52,.24);
-  --text:#052010;--text2:#0E3820;--muted:#166534;--subtle:#86EFAC;
-  --accent:#166534;--accent2:#16A34A;--accent-bg:rgba(22,101,52,.08);
-  --accent-glow:rgba(22,101,52,.16);
-  --grad:linear-gradient(135deg,#14532D 0%,#166534 45%,#16A34A 80%,#4ADE80 100%);
-  --viz1:#166534;--viz2:#16A34A;--viz3:#0891B2;--viz4:#7C3AED;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#E8F5EC;--surface:#FFFFFF;--card:#FFFFFF;--card2:#C8ECD4;
+  --border:rgba(13,92,42,.12);--border2:rgba(13,92,42,.24);
+  --text:#021808;--text2:#083018;--muted:#0D5C2A;--subtle:#60B880;
+  --accent:#0D5C2A;--accent2:#1A8A42;--accent-bg:rgba(13,92,42,.08);
+  --accent-glow:rgba(13,92,42,.16);
+  --grad:linear-gradient(135deg,#022A10 0%,#0D5C2A 30%,#1A8A42 55%,#28B860 80%,#70D890 100%);
+  --viz1:#0D5C2A;--viz2:#1A8A42;--viz3:#0891B2;--viz4:#7C3AED;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-serif);
 }
 
-/* S-18 · LAGOON — sky-blue tinted light bg, tropical sky accent */
+/* R-18 · MALDIVES
+   Clear aqua-tinted ivory · resort lagoon five-stop sweep
+   Identity: Luxury resort brand, Maldives / Bali premium travel */
 [data-theme="lagoon"]{
-  --bg:#EEF9FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#D8F2FF;
-  --border:rgba(14,165,233,.12);--border2:rgba(14,165,233,.24);
-  --text:#012030;--text2:#023A50;--muted:#036FA0;--subtle:#7DD3FC;
-  --accent:#0EA5E9;--accent2:#7DD3FC;--accent-bg:rgba(14,165,233,.08);
-  --accent-glow:rgba(14,165,233,.16);
-  --grad:linear-gradient(135deg,#0369A1 0%,#0EA5E9 55%,#7DD3FC 100%);
-  --viz1:#0EA5E9;--viz2:#7DD3FC;--viz3:#059669;--viz4:#7C3AED;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#EAF8FF;--surface:#FFFFFF;--card:#FFFFFF;--card2:#C8EDFF;
+  --border:rgba(0,144,192,.12);--border2:rgba(0,144,192,.24);
+  --text:#011828;--text2:#023040;--muted:#0090C0;--subtle:#60C8E8;
+  --accent:#0090C0;--accent2:#40C0E8;--accent-bg:rgba(0,144,192,.08);
+  --accent-glow:rgba(0,144,192,.18);
+  --grad:linear-gradient(135deg,#003C5A 0%,#0070A0 25%,#0090C0 50%,#40C0E8 75%,#A0E8FF 100%);
+  --viz1:#0090C0;--viz2:#40C0E8;--viz3:#059669;--viz4:#7C3AED;--viz5:#DC2626;--viz6:#D97706;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-sans);
 }
 
-/* S-19 · CORAL — warm off-white bg, energetic coral red-orange */
+/* R-19 · STUDIO CLAY
+   Warm coral-clay tint · ember-red four-stop creative sweep
+   Identity: Premium creative studio, brand agency, design house */
 [data-theme="coral"]{
-  --bg:#FFF8F5;--surface:#FFFFFF;--card:#FFFFFF;--card2:#FFE4DC;
-  --border:rgba(249,115,22,.12);--border2:rgba(249,115,22,.24);
-  --text:#1C0600;--text2:#3A1000;--muted:#C03A10;--subtle:#FED7AA;
-  --accent:#F97316;--accent2:#FDBA74;--accent-bg:rgba(249,115,22,.08);
-  --accent-glow:rgba(249,115,22,.16);
-  --grad:linear-gradient(135deg,#C2410C 0%,#EA580C 45%,#F97316 75%,#FDBA74 100%);
-  --viz1:#F97316;--viz2:#FDBA74;--viz3:#FBBF24;--viz4:#34D399;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#65A30D;
+  --bg:#FFF4EE;--surface:#FFFFFF;--card:#FFFFFF;--card2:#FFE0D0;
+  --border:rgba(224,48,0,.12);--border2:rgba(224,48,0,.24);
+  --text:#1A0400;--text2:#381000;--muted:#C03000;--subtle:#FF9070;
+  --accent:#E03000;--accent2:#FF6030;--accent-bg:rgba(224,48,0,.08);
+  --accent-glow:rgba(224,48,0,.18);
+  --grad:linear-gradient(135deg,#701000 0%,#A82000 25%,#D83800 50%,#E03000 70%,#FF6030 90%,#FFAA80 100%);
+  --viz1:#E03000;--viz2:#FF6030;--viz3:#FBBF24;--viz4:#34D399;--viz5:#60A5FA;--viz6:#A78BFA;--viz7:#F472B6;--viz8:#65A30D;
   --font-display:var(--font-sans);
 }
 
-/* S-20 · HARVEST — terracotta warm cream bg, deep amber · serif */
+/* R-20 · AUTUMN ESTATE
+   Deep terracotta cream · ancient amber five-stop estate sweep · serif
+   Identity: Luxury farm-to-table, Michelin fine dining, artisan food */
 [data-theme="harvest"]{
-  --bg:#F8EFE4;--surface:#FFFAF4;--card:#FFFFFF;--card2:#F0E0CC;
-  --border:rgba(146,64,14,.14);--border2:rgba(146,64,14,.28);
-  --text:#180A00;--text2:#361600;--muted:#92400E;--subtle:#D4956A;
-  --accent:#B45309;--accent2:#D97706;--accent-bg:rgba(180,83,9,.08);
-  --accent-glow:rgba(180,83,9,.16);
-  --grad:linear-gradient(135deg,#7C2D12 0%,#92400E 35%,#B45309 65%,#D97706 100%);
-  --viz1:#B45309;--viz2:#D97706;--viz3:#DC2626;--viz4:#059669;--viz5:#2563EB;--viz6:#7C3AED;--viz7:#DB2777;--viz8:#65A30D;
+  --bg:#F6EAD8;--surface:#FFF8EE;--card:#FFFFFF;--card2:#EDD8B8;
+  --border:rgba(139,69,0,.15);--border2:rgba(139,69,0,.28);
+  --text:#160800;--text2:#341400;--muted:#8B4500;--subtle:#C8906A;
+  --accent:#8B4500;--accent2:#B87030;--accent-bg:rgba(139,69,0,.08);
+  --accent-glow:rgba(139,69,0,.18);
+  --grad:linear-gradient(135deg,#3A1800 0%,#6B3000 20%,#8B4500 45%,#B87030 65%,#D4A060 85%,#EEC890 100%);
+  --viz1:#8B4500;--viz2:#B87030;--viz3:#DC2626;--viz4:#059669;--viz5:#2563EB;--viz6:#7C3AED;--viz7:#DB2777;--viz8:#65A30D;
   --font-display:var(--font-serif);
 }
 
@@ -629,14 +832,17 @@ tr:hover td{background:var(--accent-bg)}
 <header class="ds-header">
   <div class="ds-brand">
     <div class="ds-logo">CursorDrive Design System</div>
-    <div class="ds-version">v2.0 · 30 Themes</div>
+    <div class="ds-version">v3.0 · 40 Themes</div>
   </div>
   <div class="switcher-wrap">
     <div class="switcher-group" id="premiumGroup">
-      <span class="switcher-label">★ Premium</span>
+      <span class="switcher-label">★ Prestige</span>
+    </div>
+    <div class="switcher-group" id="morphicGroup">
+      <span class="switcher-label">◈ Morphic</span>
     </div>
     <div class="switcher-group" id="standardGroup">
-      <span class="switcher-label">◆ Standard</span>
+      <span class="switcher-label">◆ Refined</span>
     </div>
   </div>
 </header>
@@ -962,30 +1168,42 @@ const PREMIUM = [
   {id:'prussian-deep',    label:'Prussian Deep'},
   {id:'blush-couture',    label:'Blush Couture'},
 ];
+const MORPHIC = [
+  {id:'neuro',         label:'Neumorphism'},
+  {id:'glass-dark',    label:'Glass Dark'},
+  {id:'glass-light',   label:'Glass Light'},
+  {id:'skeuo',         label:'Skeuomorphism'},
+  {id:'brutal',        label:'Brutalism'},
+  {id:'clay-morph',    label:'Claymorphism'},
+  {id:'holo',          label:'Holographic'},
+  {id:'y2k-chrome',    label:'Y2K Chrome'},
+  {id:'vaporwave',     label:'Vaporwave'},
+  {id:'material-dark', label:'Material Dark'},
+];
 const STANDARD = [
-  {id:'twilight-indigo',  label:'Twilight Indigo'},
-  {id:'ember',            label:'Ember'},
-  {id:'venom',            label:'Venom'},
-  {id:'blood-moon',       label:'Blood Moon'},
-  {id:'verdigris',        label:'Verdigris'},
-  {id:'neon-azure',       label:'Neon Azure'},
-  {id:'plum-dark',        label:'Plum Dark'},
-  {id:'neon-magenta',     label:'Neon Magenta'},
-  {id:'canary',           label:'Canary'},
-  {id:'arctic',           label:'Arctic'},
-  {id:'jade',             label:'Jade'},
-  {id:'saffron',          label:'Saffron'},
-  {id:'crimson',          label:'Crimson'},
-  {id:'scholar',          label:'Scholar'},
-  {id:'ocean',            label:'Ocean'},
-  {id:'sakura',           label:'Sakura'},
-  {id:'forest',           label:'Forest'},
-  {id:'lagoon',           label:'Lagoon'},
-  {id:'coral',            label:'Coral'},
-  {id:'harvest',          label:'Harvest'},
+  {id:'twilight-indigo',  label:'Obsidian Indigo'},
+  {id:'ember',            label:'Hearth'},
+  {id:'venom',            label:'Matrix Grid'},
+  {id:'blood-moon',       label:'Noir Rouge'},
+  {id:'verdigris',        label:'Jade Palace'},
+  {id:'neon-azure',       label:'Cobalt Depths'},
+  {id:'plum-dark',        label:'Amethyst'},
+  {id:'neon-magenta',     label:'Electric Rose'},
+  {id:'canary',           label:'Neon Volt'},
+  {id:'arctic',           label:'Frost Glass'},
+  {id:'jade',             label:'Celadon Spa'},
+  {id:'saffron',          label:'Rajasthan Gold'},
+  {id:'crimson',          label:'Bordeaux'},
+  {id:'scholar',          label:'Royal Ink'},
+  {id:'ocean',            label:'Atlantic'},
+  {id:'sakura',           label:'Edo Garden'},
+  {id:'forest',           label:'Rainforest'},
+  {id:'lagoon',           label:'Maldives'},
+  {id:'coral',            label:'Studio Clay'},
+  {id:'harvest',          label:'Autumn Estate'},
 ];
 
-const LIGHT_THEMES = new Set(['arctic','jade','saffron','crimson','scholar','ocean','sakura','forest','lagoon','coral','harvest','champagne','pearl-editorial','blush-couture']);
+const LIGHT_THEMES = new Set(['arctic','jade','saffron','crimson','scholar','ocean','sakura','forest','lagoon','coral','harvest','champagne','pearl-editorial','blush-couture','neuro','glass-light','brutal','clay-morph']);
 
 const TOKENS = [
   {l:'BG',tok:'--bg'},{l:'Surface',tok:'--surface'},{l:'Card',tok:'--card'},{l:'Card 2',tok:'--card2'},
@@ -999,15 +1217,11 @@ function ctv(t){return getComputedStyle(document.body).getPropertyValue(t).trim(
 
 function buildSwitcher(){
   const pg=document.getElementById('premiumGroup');
+  const mg=document.getElementById('morphicGroup');
   const sg=document.getElementById('standardGroup');
-  PREMIUM.forEach(t=>{
-    const b=mk(t,true);
-    pg.appendChild(b);
-  });
-  STANDARD.forEach(t=>{
-    const b=mk(t,false);
-    sg.appendChild(b);
-  });
+  PREMIUM.forEach(t=>pg.appendChild(mk(t,true)));
+  MORPHIC.forEach(t=>mg.appendChild(mk(t,true)));
+  STANDARD.forEach(t=>sg.appendChild(mk(t,false)));
 }
 
 function mk(t,prem){
@@ -1021,10 +1235,11 @@ function mk(t,prem){
 function setTheme(id){
   current=id;
   document.body.setAttribute('data-theme',id);
+  const allThemes=[...PREMIUM,...MORPHIC,...STANDARD];
   document.querySelectorAll('.theme-btn').forEach(b=>{
-    b.classList.toggle('active',b.textContent===[...PREMIUM,...STANDARD].find(t=>t.id===id)?.label);
+    b.classList.toggle('active',b.textContent===allThemes.find(t=>t.id===id)?.label);
   });
-  const t=[...PREMIUM,...STANDARD].find(t=>t.id===id);
+  const t=allThemes.find(t=>t.id===id);
   document.getElementById('themeLabel').textContent=t?t.label:id;
   // glass card
   const gc=document.getElementById('glassCard');
